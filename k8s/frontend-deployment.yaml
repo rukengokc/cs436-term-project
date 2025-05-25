@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
       - name: todo-frontend
-        image: todo-frontend:latest
-        imagePullPolicy: Never
+        image: gcr.io/ancient-ensign-451511-f4/todo-frontend:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
         env:
